@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Name"/>
+
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"/>
+
+
+    <EditText
+    android:id="@+id/etDate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Check-in Date (MM/DD/YYYY)"
+    android:inputType="date"/>
+
+    <EditText
+        android:id="@+id/Noofday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Total No of Days"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/psNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Total No of Persons"
+        android:inputType="number"/>
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"/>
+
+
+
+</LinearLayout>

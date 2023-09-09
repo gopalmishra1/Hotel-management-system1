@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".roominformation">
+
+    <!-- activity_main.xml -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Room Type"
+        android:textSize="30dp"/>
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <RadioButton
+            android:id="@+id/radioButtonOption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delux Room, Rate=2500/-"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonOption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suite Room Rate= 4000/-"/>
+
+        <!-- Add more radio buttons for additional options if needed -->
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select AC Or Non Ac"
+        android:textSize="30dp"/>
+    <RadioGroup
+        android:id="@+id/radiogroupAc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+        android:id="@+id/radioButtonAc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AC: 1000/-"/>
+        <RadioButton
+            android:id="@+id/radioButtonNonAc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Non Ac-"/>
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Locker or No Locker"
+        android:textSize="30dp"/>
+    <RadioGroup
+        android:id="@+id/radiogroupLocker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radioButtonLocker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Locker: 300/-"/>
+        <RadioButton
+            android:id="@+id/radioButtonNoLocker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Locker"/>
+
+    </RadioGroup>
+    <EditText
+        android:id="@+id/advancepayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="advance payment"
+        android:inputType="number"/>
+    <Button
+        android:id="@+id/paybutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay"
+      />
+
+
+
+</LinearLayout>
